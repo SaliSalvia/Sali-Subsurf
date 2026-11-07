@@ -37,7 +37,7 @@ jobs:
           sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0" > /dev/null
 
       - name: Set up Gradle (wrapper-driven, with dependency caching)
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v6
 
       - name: Build APKs, run unit tests (signed when secrets are present)
         working-directory: android
